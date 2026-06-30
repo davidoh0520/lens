@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LZN Optical Lens</title>
+  <meta name="description" content="LZN Optical Lens product catalogue: blue ray, photochromic, progressive and semi-finished optical lenses." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#products" aria-label="LZN Optical Lens">
+      <img src="assets/contact/lzn-logo.png" alt="LZN" />
+      <span>OPTICAL LENS</span>
+    </a>
+    <nav>
+      <a href="#products">PRODUCTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="products">
+      <div class="hero-copy">
+        <p class="eyebrow">LZN OPTICAL LENS</p>
+        <h1>Optical Lens Product Catalogue</h1>
+        <p>Blue Ray, Photochromic, Progressive and Semi-Finished lenses for B2B optical supply.</p>
+        <a class="btn" href="#contact">Request Product Information</a>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="section-title">
+        <p class="eyebrow">PRODUCTS</p>
+        <h2>19 Lens Products</h2>
+      </div>
+      <div class="filters" aria-label="Product category filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="single">Single Vision</button>
+        <button data-filter="progressive">Progressive</button>
+        <button data-filter="semi">Semi-Finished</button>
+      </div>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow">CONTACT</p>
+        <h2>Request Product Information</h2>
+        <h3>LZN MEDICAL CO., LTD.</h3>
+        <p>Tel: <a href="tel:+8613062619570">+86 130 6261 9570</a></p>
+        <p>Email: <a href="mailto:sales@lznmed.com">sales@lznmed.com</a></p>
+      </div>
+      <div class="qr-wrap">
+        <div class="qr-card"><img src="assets/contact/whatsapp-qr.png" alt="WhatsApp QR"><b>WhatsApp</b></div>
+        <div class="qr-card"><img src="assets/contact/wechat-qr.png" alt="WeChat QR"><b>WeChat</b></div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/821063175840" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span>WhatsApp</span>
+  </a>
+
+  <dialog id="productModal">
+    <button class="close" aria-label="Close">×</button>
+    <div class="modal-body">
+      <img id="modalImage" alt="" />
+      <div>
+        <p class="eyebrow" id="modalCategory"></p>
+        <h2 id="modalTitle"></h2>
+        <dl id="modalSpecs"></dl>
+        <a class="btn" href="#contact" id="modalQuote">Request Quotation</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
